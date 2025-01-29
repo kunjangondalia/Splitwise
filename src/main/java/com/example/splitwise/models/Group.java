@@ -8,7 +8,7 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Entity(name = "groups")
+@Entity(name = "grp")
 @Getter
 @Setter
 public class Group extends BaseEntity{

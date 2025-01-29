@@ -6,7 +6,7 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Entity(name = "users")
+@Entity
 @Getter
 @Setter
 public class Expense extends BaseEntity{
