@@ -19,4 +19,35 @@ public class Expense extends BaseEntity{
     @OneToMany
     private List<UserExpense> expenseTo;
 
+    public Group getGroup() {
+        return group;
+    }
+
+    public void setGroup(Group group) {
+        this.group = group;
+    }
+
+    public ExpenseType getExpenseType() {
+        return expenseType;
+    }
+
+    public void setExpenseType(ExpenseType expenseType) {
+        this.expenseType = expenseType;
+    }
+
+    public List<UserExpense> getExpenseFor() {
+        return expenseFor;
+    }
+
+    public void setExpenseFor(List<UserExpense> expenseFor) {
+        this.expenseFor = expenseFor;
+    }
+
+    public List<UserExpense> getExpenseTo() {
+        return expenseTo;
+    }
+
+    public void setExpenseTo(List<UserExpense> expenseTo) {
+        this.expenseTo = expenseTo;
+    }
 }

@@ -13,6 +13,38 @@ import java.util.Date;
 @Getter
 @Setter
 public class UserExpense extends BaseEntity{
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Expense getExpense() {
+        return expense;
+    }
+
+    public void setExpense(Expense expense) {
+        this.expense = expense;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+    public UserExpenseType getUserExpenseType() {
+        return userExpenseType;
+    }
+
+    public void setUserExpenseType(UserExpenseType userExpenseType) {
+        this.userExpenseType = userExpenseType;
+    }
+
     @ManyToOne
     private User user;
     @ManyToOne
